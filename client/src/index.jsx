@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TodoList from './components/TodoList.jsx';
 
 class App extends React.Component {
 
   render() {
     return (
-      <h1> my todos </h1>
+      <div>
+        <h1> my todos </h1>
+        <TodoList />
+      </div>
 
       );
   }
