@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+  background-color: white;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: 100px;
+  margin-bottom: 9px;
+  height: 45px;
+  width: 100%;
+  box-shadow: 0 3px 10px 1px lightgray;
+}
+
+li:hover {
+  background-color: #e6f3ff;
+}
+
+.item {
+  font-size: 40%;
+  padding-left: 10%;
+/*  text-decoration: line-through;*/
+}

@@ -1,0 +1,16 @@
+
+input {
+  margin-left: 10%;
+  margin-right: auto;
+  width: 90%;
+  height: 40px;
+  font-size: 30px;
+}
+
+#list {
+  position: sticky;
+  width: 90%;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 90px;
+}

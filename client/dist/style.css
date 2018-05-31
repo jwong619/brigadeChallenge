@@ -1,0 +1,20 @@
+body {
+  background-color: #F0F8FF;
+}
+
+h1 {
+  margin: auto;
+  width: 90%;
+  text-align: center;
+/*  padding-top: 50px;*/
+  font-family: helvetica;
+  font-size: 90px;
+}
+
+.container {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 90px;
+}

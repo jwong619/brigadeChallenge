@@ -1,4 +1,5 @@
 import React from 'react';
+import './Task.css';
 
 class Task extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class Task extends React.Component {
     return (
       <div>
         <li >
-          {this.state.task}
+          <div className="item">{this.state.task}</div>
         </li>
       </div>
       );

@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task.jsx';
+import './TodoList.css';
 
 class TodoList extends React.Component {
   constructor(props) {
@@ -34,21 +35,35 @@ class TodoList extends React.Component {
     e.preventDefault();
   }
 
+  // delete task feature
+  deleteTask() {
+
+  }
+
   // crossOutTask
+
+  // show total todo count
+    //
+
+  // show remaining todo count
+    // if crossed out
 
   render() {
     return (
-      <div>
+      <div id="list">
 
-      <form onSubmit={this.addTask}>
-        <input type="text" placeholder="What needs to be done?" value={this.state.term} onChange={this.onChange}/>
-      </form>
 
-      <ul>
-      {this.state.todos.map((task, ind) => {
-        return <Task key={ind} task={task}/>
-      })}
-      </ul>
+        <form onSubmit={this.addTask}>
+          <input type="text" placeholder="What needs to be done?" value={this.state.term} onChange={this.onChange} />
+        </form>
+
+
+        <ul>
+        {this.state.todos.map((task, ind) => {
+          return <Task key={ind} task={task} id={ind}/>
+        })}
+        </ul>
+
 
       </div>
       );
