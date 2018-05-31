@@ -14,7 +14,9 @@ class Task extends React.Component {
     return (
       <div>
         <li >
-          <div className="item">{this.state.task}</div>
+          <span className="item">{this.state.task}</span>
+          <span id="close"><button> X </button></span>
+
         </li>
       </div>
       );
@@ -22,3 +24,6 @@ class Task extends React.Component {
 }
 
 export default Task;
+
+
+// //

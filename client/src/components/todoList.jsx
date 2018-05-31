@@ -1,6 +1,7 @@
 import React from 'react';
 import Task from './Task.jsx';
 import './TodoList.css';
+import StatsBar from './StatsBar.jsx'
 
 class TodoList extends React.Component {
   constructor(props) {
@@ -9,7 +10,9 @@ class TodoList extends React.Component {
     this.addTask = this.addTask.bind(this);
     this.state = {
       todos: [],
-      term: ''
+      term: '',
+      totalTasks: 0,
+      completedTasks: 0
     }
   }
 
@@ -27,26 +30,27 @@ class TodoList extends React.Component {
       this.setState((prevState) => {
         return {
           todos: prevState.todos.concat(newTask),
-          term: ''
+          term: '',
+          totalTasks: prevState.totalTasks + 1
         };
       });
       console.log('added/updated todos ---', this.state.todos);
+      console.log(this.state.totalTasks);
     }
     e.preventDefault();
   }
 
   // delete task feature
   deleteTask() {
+    // need to find item in ist
+    // and remove it
+    this.setState({
 
+    })
   }
 
   // crossOutTask
 
-  // show total todo count
-    //
-
-  // show remaining todo count
-    // if crossed out
 
   render() {
     return (
@@ -57,6 +61,7 @@ class TodoList extends React.Component {
           <input type="text" placeholder="What needs to be done?" value={this.state.term} onChange={this.onChange} />
         </form>
 
+        <StatsBar todos={this.state.todos} totalTasks={this.state.totalTasks} completedTasks={this.state.completedTasks}/>
 
         <ul>
         {this.state.todos.map((task, ind) => {

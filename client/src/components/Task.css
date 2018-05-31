@@ -10,14 +10,23 @@ li {
   height: 45px;
   width: 100%;
   box-shadow: 0 3px 10px 1px lightgray;
+  font-size: 32px;
 }
+
 
 li:hover {
   background-color: #e6f3ff;
 }
 
 .item {
-  font-size: 40%;
-  padding-left: 10%;
+  padding-left: 4%;
+  position: fixed;
 /*  text-decoration: line-through;*/
+}
+
+#close {
+  float: right;
+  background-color: transparent;
+  border: none;
+  padding-right: 5px;
 }

@@ -1,0 +1,12 @@
+.statsBar {
+  font-size: 15px;
+}
+
+#remainingTasks {
+  float: left;
+  padding-left: 50px;
+}
+
+#completedTasks {
+  float: right;
+}
