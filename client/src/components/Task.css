@@ -24,6 +24,10 @@ li:hover {
 /*  text-decoration: line-through;*/
 }
 
+.item:hover {
+  font-weight: 900;
+}
+
 #close {
   float: right;
   background-color: transparent;

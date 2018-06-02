@@ -10,8 +10,8 @@ class StatsBar extends React.Component {
     return (
 
       <div className="statsBar">
-        <span id="remainingTasks"> {this.props.totalTasks}   remaining </span>
-        <span id="completedTasks"> {this.props.completedTasks} completed </span>
+        <span id="remainingTasks"> {this.props.totalTasksCount}   remaining </span>
+        <span id="completedTasks"> {this.props.completedTasksCount} completed </span>
       </div>
 
       );
